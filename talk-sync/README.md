@@ -1,0 +1,1 @@
+This is child project provide message synchronization.
