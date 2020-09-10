@@ -1,1 +1,0 @@
-This is child project for front end.

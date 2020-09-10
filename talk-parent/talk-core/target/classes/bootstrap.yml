@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: talk-core
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: talk-config
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://peer1:8761/eureka/

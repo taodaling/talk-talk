@@ -1,1 +1,0 @@
-This is child project provide all api required by vision project.
