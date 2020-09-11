@@ -1,12 +1,7 @@
 spring:
   application:
-    name: talk-core
+    name: talk-eureka
   cloud:
-    config:
-      profile: dev
-      discovery:
-        enabled: true
-        service-id: talk-config
     stream:
       kafka:
         binder:

@@ -7,6 +7,17 @@ spring:
       discovery:
         enabled: true
         service-id: talk-config
+    stream:
+      kafka:
+        binder:
+          zk-nodes: localhost:2181
+          brokers: localhost:9092
+  zipkin:
+    sender:
+      type: kafka
+  sleuth:
+    sampler:
+      probability: 1.0
 
 eureka:
   client:
@@ -14,3 +25,9 @@ eureka:
       enabled: true
     service-url:
       defaultZone: http://peer1:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,15 +1,11 @@
-eureka:
-  client:
-    healthcheck:
-      enabled: true
-    service-url:
-      defaultZone: http://peer1:8761/eureka/
-
 spring:
-  application:
-    name: talk-config
   profiles:
     active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: /media/share/sourcecode/talk-talk/talk-parent/talk-config/config
 
 server:
-  port: 8861
+  port: 8771
