@@ -1,0 +1,19 @@
+auth:
+  accessToken:
+    ttl: 90000000
+  refreshToken:
+    ttl: 180000000
+  verifyEmail:
+    interval: 5
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        userRegisterProcess:
+          binder: kafka
+          destination: userRegisterProcess
+          group: group-1
+          content-type: application/json
+
+host: localhost:10000/talk-auth

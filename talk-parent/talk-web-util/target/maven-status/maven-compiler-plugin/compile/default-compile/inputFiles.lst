@@ -1,0 +1,12 @@
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/exception/BizException.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/model/WebResult.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/config/TokenConfig.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/utils/CollectionUtils.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/safe/JWTGenerator.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/exception/InvalidTokenException.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/safe/JWTParser.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/exception/ResourceNotFoundException.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/annotation/LoginUser.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/component/TokenHandlerMethodArgumentResolver.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/model/LoginUserModel.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-web-util/src/main/java/org/talk/web/component/WebErrorHandler.java

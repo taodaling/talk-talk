@@ -7,17 +7,6 @@ spring:
       discovery:
         enabled: true
         service-id: talk-config
-    stream:
-      kafka:
-        binder:
-          zk-nodes: localhost:2181
-          brokers: localhost:9092
-  zipkin:
-    sender:
-      type: kafka
-  sleuth:
-    sampler:
-      probability: 1.0
 
 eureka:
   client:
@@ -31,3 +20,6 @@ management:
     web:
       exposure:
         include: "*"
+
+server:
+  port: 10001

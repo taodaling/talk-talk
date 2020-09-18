@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+
+server:
+  port: 10000

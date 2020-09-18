@@ -1,0 +1,12 @@
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/config/SecureConfig.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/dto/UserLoginResponse.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/controller/AuthController.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/service/AuthService.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/dto/UserLoginRequest.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/dao/UserMapper.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/AuthApplication.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/dto/UserRefreshRequest.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/service/UserService.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/dao/UserCustomMapper.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/model/User.java
+/media/share/sourcecode/talk-talk/talk-parent/talk-auth/src/main/java/org/talk/auth/model/UserExample.java

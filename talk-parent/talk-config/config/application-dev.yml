@@ -1,0 +1,66 @@
+jwt:
+  privateKey: |
+    MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCmxVgNA3Uwi1UJ
+    hkEpnaKE3Cc9AXdfsLhCWDFt1UTzvU9k4SRJBchR2bWOaWbUVsFUyDKB9APbkXLH
+    0pmpONmsVHuYAsWUcdVRJgjg22yzmE/rdDxu5PUgAU27/235xbwsm67WZdDnswL/
+    L5zV3tD0g3FKpjyUetqEwtjE1OHLG2a6hmj9DUoW4j0Z9s6u46OoFii5NB4fAX5k
+    dXzALAnMrLpWy4fr7hUToBvdvpnVx1LYR1Tk2aXkjYJCoCeDJZ6IPgUf8QRKojTs
+    6LJigys1m9fA/rs2P1Efm0c3hWaWKQLhUmYuCtVlo10/BqQpdTXYKD2+2a3BoFKE
+    +1fcIexDAgMBAAECggEBAKDB/nyc5qxiwxgpSEsbXvv/U/uknDOroBKj/RHI0Wy7
+    AftWY6nYXx83Y6HhzHPHJRna2YUXeViAPkqMof7ThFBwJ6uCkH7ltCFDLq/CFGiS
+    3Ac1xsOHBRtS5mHgeVyZ1SiS8dhN0TBoCO2AMgiffoEU63JwCFmAi4AKavZh1z32
+    np3WHGaVjl5LtiwqMouinhUmIXeqVjBXp+7VzPG2q4OMJWze9TQGRYyy5sQDdQe9
+    uIPgE+C24WxEk5kXymz69AhXXjhLgT9lrh4ChO+z1dSX4OogNcwNnbAyxCKv9/73
+    /k4buYH31VAF9VzhTGbTp6HeS88a8/x3ze2ejxGMTwECgYEA3ZmU2G/iqQ8Mu+EX
+    ANpYXWYwTd/eWoZyBQeo4uT1jrjBBV6G+KtAlQB2phATzbLsiTCwMBlTSpkFENLC
+    8N4GxcMizZ34Poz9hptySSxEOn+PxVpnAd46dwR8NN5bGk9X9UVr2LrjjrjB0QJW
+    ViHfup/PYw0bgxsppvWret92IIMCgYEAwKjYwWlHjv+bhccHBPE0jm4I31LS4inq
+    xXJNQy34b2HKhdI7OxtRUf8LZO8bGT8e1Ti3kjx/+DpVw/3kQA0jL8zMzXPIH1NM
+    j8PfYtMXT4iAH6bZeAUJ0CNWbLum4x+t9pNG9VPliuaB+QWO+0oMrH99U4c5F76b
+    plvnCyy3uUECgYByGTHaf0FlaqpT0oHVnpcBACy+7BXA5piunlMHAHyvD9HSwekd
+    AJAwKBzvRDfuIcJIoRkWqvOH5WIGV36oJqm2CdNRq5S2IEIpnMArjO9Ub3nHU9TV
+    0WapAVYyooql8VSIpUXyQcgJJHgm9d0eXDKmFMLjbUxNJR89KCEzEvvvoQKBgQCQ
+    Lkx5AmcRN22WgkpYgoMIjISLTRqRMzmFpnL38bFY+eBsoda990W2jZ5jXSX0kO5s
+    N9P51tkWVeHVmW52GN7aaPRkVV/RQa+sb7P/62YomUj5Zw6c6XhckfWdzhmpJA42
+    2CVkd/LzLmraiDRnDxXJCmgqWKp7gKRPrbuM+1xLgQKBgD/5g8DDZtezWPJnHQHS
+    94EsTG4oaB+QRD3KDHk4vtfQHTYjy2NIM34ACn72WxBrYgtTq7D5wwozRC3Hq/YC
+    APvyEtsAZoVZmbN7ZxvvaUgApWwGvtsSOvrFlUwqWJmOAkAQ75nQ/RJ4QkOtvfnb
+    Clt42kqS6sz3aSfjc08Ym3Hc
+  publicKey: |
+    MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApsVYDQN1MItVCYZBKZ2i
+    hNwnPQF3X7C4QlgxbdVE871PZOEkSQXIUdm1jmlm1FbBVMgygfQD25Fyx9KZqTjZ
+    rFR7mALFlHHVUSYI4Ntss5hP63Q8buT1IAFNu/9t+cW8LJuu1mXQ57MC/y+c1d7Q
+    9INxSqY8lHrahMLYxNThyxtmuoZo/Q1KFuI9GfbOruOjqBYouTQeHwF+ZHV8wCwJ
+    zKy6VsuH6+4VE6Ab3b6Z1cdS2EdU5Nml5I2CQqAngyWeiD4FH/EESqI07OiyYoMr
+    NZvXwP67Nj9RH5tHN4VmlikC4VJmLgrVZaNdPwakKXU12Cg9vtmtwaBShPtX3CHs
+    QwIDAQAB
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/talk?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    username: talk
+    password: 123456
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    timeout: 3000
+  cloud:
+    stream:
+      kafka:
+        binder:
+          zk-nodes: localhost:2181
+          brokers: localhost:9092
+  zipkin:
+    sender:
+      type: kafka
+  sleuth:
+    sampler:
+      probability: 1.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

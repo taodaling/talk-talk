@@ -1,5 +1,6 @@
 package org.talk.core;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,13 +11,12 @@ import java.util.Date;
 
 @RequestMapping("/hello")
 @RestController
-@RefreshScope
 public class HelloController {
-    @Value("${greet}")
-    private String greet;
+    @Autowired
+    private UserService userService;
 
     @RequestMapping("/date")
     public String getDate() {
-        return greet + ":" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+        return userService.greet() + ":" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
     }
 }
